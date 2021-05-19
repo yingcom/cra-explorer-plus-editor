@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+:root {
+  --indentation: 2rem;
+  --padding: 0.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#app {
+  padding: 1rem;
+  line-height: 1.7rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.panel-wrapper-left {
+  width: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.panel-wrapper-right {
+  width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 688px) {
+  :root {
+    --indentation: 1rem;
+  }
+  .panel-wrapper-left, .panel-wrapper-right {
+    width: 100%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button-wrapper {
+  padding: var(--padding, 0.5rem);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-label {
+  min-width: 5rem;
+}
+
+.button-text {
+  margin-left: 0.25rem;
+}
+
+.tree-wrapper {
+  padding: var(--padding, 0.5rem);
+}
+
+.tree-group {
+  display: flex;
+  cursor: pointer;
+}
+
+.tree-group-fa {
+  align-self: center;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.2rem;
+}
+
+.tree-group-name {
+  align-self: center;
+}
+
+.node-wrapper {
+  padding: var(--padding, 0.5rem) calc(var(--indentation)/2);
+}
+
+.node-item {
+  width: 4rem;
+  padding: 0 calc(var(--indentation)/2);
+  cursor: pointer;
+}
+
+.node-item:hover, .node-item:focus {
+  background: #efefef;
+}
+
+.post-wrapper {
+  padding: var(--padding, 0.5rem);
+  margin-top: 0.25rem;
+}
+
+@media screen and (max-width: 688px) {
+  .post-wrapper {
+    margin-top: 2rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.post-row {
+  display: flex;
+  padding: 0 var(--indentation);
+}
+
+.post-col-0 {
+  min-width: 5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.post-col-1 {
+  min-width: 10rem;
+  flex: 1;
+}
+
+.editor-wrapper {
+  margin-top: 1rem;
+  padding: var(--padding, 0.5rem);
+}
+
+.editor-header {
+  padding: 0 var(--indentation);
+}
+
+.editor-row {
+  display: flex;
+  margin: 0.2rem 0;
+  padding: 0 var(--indentation);
+}
+
+.editor-col-0 {
+  min-width: 5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  align-self: center;
+}
+
+.editor-col-1 {
+  min-width: 10rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  align-self: center;
+}
+
+.editor-btn {
+  min-width: 5rem;
+  height: 1.7rem;
+  margin-left: 5rem;
+  margin-top: 1rem;
 }
