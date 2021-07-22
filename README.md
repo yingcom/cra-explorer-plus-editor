@@ -15,7 +15,7 @@ To make the development server only binds to `localhost`, you can create an `.en
 
 `yarn build` or `npm run build` to build the app for production to the `build` folder.  
 
-`yarn serve` or `run run serve` to serve `build` folder.  
+`yarn serve` or `npm run serve` to serve `build` folder.  
 
 `yarn eject` to remove the single build dependency from your project. This is a one-way operation. Once you `eject`, you can’t go back!  
 

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "author": "Ying Feng",
-  "description": "A content explorer plus editor bootstraped",
+  "description": "A content explorer plus editor bootstrapped with create-react-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
