@@ -1,7 +1,7 @@
 import './styles/App.css'
 import { useState } from 'react'
 import mockdata from './data/mockdata.json'
-import DataTransformer from './components/DataTransformer'
+import DataTransformer from './utils/DataTransformer'
 import RadioButton from './components/RadioButton'
 import Tree from './components/Tree'
 import PostItem from './components/PostItem'
