@@ -1,4 +1,4 @@
-import './App.css'
+import './styles/App.css'
 import { useState } from 'react'
 import mockdata from './data/mockdata.json'
 import DataTransformer from './components/DataTransformer'
