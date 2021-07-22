@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import PostItem from './PostItem.js'
+import PostItem from '../components/PostItem.js'
 
 test('render PostItem', () => {
   const post = {

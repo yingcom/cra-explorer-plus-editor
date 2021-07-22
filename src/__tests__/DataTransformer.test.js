@@ -1,4 +1,4 @@
-import DataTransformer from './DataTransformer.js'
+import DataTransformer from '../components/DataTransformer.js'
 
 const testdata = [{
   "id": 101,

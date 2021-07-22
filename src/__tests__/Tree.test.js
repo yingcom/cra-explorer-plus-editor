@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import dataset from '../data/mockdata.json'
-import DataTransformer from './DataTransformer'
-import Tree from './Tree.js'
+import DataTransformer from '../components/DataTransformer'
+import Tree from '../components/Tree.js'
 
 test('render and click Tree to toggle children visibility', () => {
   const cb = jest.fn()

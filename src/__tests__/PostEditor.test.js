@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import PostEditor from './PostEditor.js'
+import PostEditor from '../components/PostEditor.js'
 
 test('render PostEditor and fire user events to invoke callback', () => {
   const post = {

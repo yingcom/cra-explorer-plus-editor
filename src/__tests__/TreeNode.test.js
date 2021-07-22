@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import TreeNode from './TreeNode.js'
+import TreeNode from '../components/TreeNode.js'
 
 test('render and click TreeNode to invoke callback', () => {
   const mockTreeNodes = [

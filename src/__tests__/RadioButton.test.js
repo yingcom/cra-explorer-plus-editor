@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import RadioButton from './RadioButton.js'
+import RadioButton from '../components/RadioButton.js'
 
 test('render and click radio buttons', () => {
   const cb = jest.fn()
